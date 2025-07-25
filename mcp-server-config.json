@@ -2,7 +2,7 @@
   "gmail": {
     "command": "npx",
     "args": [
-      "--package=@cristiano-morgante/gmail-mcp-manager@1.1.0",
+      "--package=@cristiano-morgante/gmail-mcp-manager@1.2.1",
       "gmail-mcp-server"
     ],
     "env": {
