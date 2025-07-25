@@ -1,6 +1,6 @@
 # Gmail MCP Server
 
-[![npm version](https://badge.fury.io/js/@mcp%2Fgmail-manager.svg)](https://badge.fury.io/js/@mcp%2Fgmail-manager)
+[![npm version](https://badge.fury.io/js/@cristiano-morgante%2Fgmail-mcp-manager.svg)](https://badge.fury.io/js/@cristiano-morgante%2Fgmail-mcp-manager)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
@@ -26,10 +26,10 @@ A complete **MCP (Model Context Provider) Server** for Gmail API management with
 
 ```bash
 # Install globally for CLI usage
-npm install -g @mcp/gmail-manager
+npm install -g @cristiano-morgante/gmail-mcp-manager
 
 # Or install locally for programmatic usage
-npm install @mcp/gmail-manager
+npm install @cristiano-morgante/gmail-mcp-manager
 ```
 
 ### Setup
@@ -57,7 +57,7 @@ npm install @mcp/gmail-manager
    gmail-mcp auth login
    
    # Or programmatically (will prompt for auth)
-   node -e "import('@mcp/gmail-manager').then(({createFromEnvironment}) => createFromEnvironment().initialize())"
+   node -e "import('@cristiano-morgante/gmail-mcp-manager').then(({createFromEnvironment}) => createFromEnvironment().initialize())"
    ```
 
 ## 📖 Usage
@@ -133,7 +133,7 @@ gmail-mcp context7 clear-cache
 
 #### Basic Example
 ```javascript
-import { createFromEnvironment } from '@mcp/gmail-manager';
+import { createFromEnvironment } from '@cristiano-morgante/gmail-mcp-manager';
 
 async function example() {
   // Create manager from environment variables
@@ -163,7 +163,7 @@ async function example() {
 
 #### Advanced Configuration
 ```javascript
-import { GmailMCPManager, GMAIL_SCOPES } from '@mcp/gmail-manager';
+import { GmailMCPManager, GMAIL_SCOPES } from '@cristiano-morgante/gmail-mcp-manager';
 
 const config = {
   oauth2: {
@@ -344,8 +344,8 @@ await manager.sendMessage(email);
 
 ```bash
 # Clone the repository
-git clone https://github.com/mcp/gmail-manager.git
-cd gmail-manager
+git clone https://github.com/Simplify-Technology/gmail-mcp-manager.git
+cd gmail-mcp-manager
 
 # Install dependencies
 npm install
@@ -404,9 +404,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📖 [Documentation](https://github.com/mcp/gmail-manager#readme)
-- 🐛 [Issue Tracker](https://github.com/mcp/gmail-manager/issues)
-- 💬 [Discussions](https://github.com/mcp/gmail-manager/discussions)
+- 📖 [Documentation](https://github.com/Simplify-Technology/gmail-mcp-manager#readme)
+- 🐛 [Issue Tracker](https://github.com/Simplify-Technology/gmail-mcp-manager/issues)
+- 💬 [Discussions](https://github.com/Simplify-Technology/gmail-mcp-manager/discussions)
 
 ---
 
