@@ -1,0 +1,89 @@
+{
+  "name": "@cristiano-morgante/gmail-mcp-manager",
+  "version": "1.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "description": "MCP Server for Gmail API management with OAuth2 authentication and Context7 integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "gmail-mcp": "dist/cli.js",
+    "gmail-mcp-server": "dist/mcp-server.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./cli": {
+      "import": "./dist/cli.js",
+      "require": "./dist/cli.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "mcp-server": "node dist/mcp-server.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "gmail",
+    "google-api",
+    "oauth2",
+    "email",
+    "context7",
+    "typescript",
+    "cli"
+  ],
+  "author": "MCP Gmail Manager",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "@types/server-destroy": "^1.0.4",
+    "@upstash/context7-mcp": "latest",
+    "chalk": "^5.0.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.0.0",
+    "google-auth-library": "^9.0.0",
+    "googleapis": "^140.0.0",
+    "inquirer": "^9.0.0",
+    "open": "^10.2.0",
+    "server-destroy": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simplify-Technology/gmail-mcp-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Simplify-Technology/gmail-mcp-manager/issues"
+  },
+  "homepage": "https://github.com/Simplify-Technology/gmail-mcp-manager#readme"
+}

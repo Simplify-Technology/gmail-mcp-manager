@@ -1,0 +1,15 @@
+{
+  "gmail": {
+    "command": "npx",
+    "args": [
+      "--package=@cristiano-morgante/gmail-mcp-manager@1.1.0",
+      "gmail-mcp-server"
+    ],
+    "env": {
+      "CONTEXT7_ENABLED": "true",
+      "GOOGLE_CLIENT_ID": "your_google_client_id_here",
+      "GOOGLE_CLIENT_SECRET": "your_google_client_secret_here"
+    },
+    "working_directory": null
+  }
+}
