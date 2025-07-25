@@ -80,7 +80,7 @@ tokens.json
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist - REMOVED: dist/ contains compiled files needed for NPM package
 
 # Gatsby files
 .cache/
