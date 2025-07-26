@@ -5,7 +5,7 @@
  * Demonstrates how to use the Gmail MCP Manager programmatically
  */
 
-import { GmailMCPManager, createFromEnvironment } from '@mcp/gmail-manager';
+import { GmailMCPManager, createFromEnvironment } from '@cristiano-morgante/gmail-mcp-manager';
 import dotenv from 'dotenv';
 
 // Load environment variables

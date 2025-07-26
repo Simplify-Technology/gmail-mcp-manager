@@ -1,0 +1,17 @@
+{
+  "gmail": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "--package=@cristiano-morgante/gmail-mcp-manager@1.3.3",
+      "gmail-mcp-server"
+    ],
+    "env": {
+      "GOOGLE_CLIENT_ID": "your_google_client_id_here",
+      "GOOGLE_CLIENT_SECRET": "your_google_client_secret_here",
+      "GOOGLE_REDIRECT_URI": "http://localhost:3000/oauth2callback",
+      "CONTEXT7_ENABLED": "true"
+    },
+    "working_directory": null
+  }
+}

@@ -155,6 +155,9 @@ docker-compose.yml
 *tokens*.json
 .gmail-mcp-tokens.json
 
+# Configuration files with real credentials (security)
+mcp-server-config.json
+
 # Output files
 .output.txt
 

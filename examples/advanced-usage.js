@@ -5,7 +5,7 @@
  * Demonstrates advanced features including Context7 integration, batch operations, and drafts
  */
 
-import { GmailMCPManager, GMAIL_SCOPES } from '@mcp/gmail-manager';
+import { GmailMCPManager, GMAIL_SCOPES } from '@cristiano-morgante/gmail-mcp-manager';
 import dotenv from 'dotenv';
 
 // Load environment variables

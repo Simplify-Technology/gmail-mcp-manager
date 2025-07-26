@@ -124,6 +124,9 @@ __tests__/
 # Output files
 .output.txt
 
+# Configuration files with real credentials (SECURITY CRITICAL)
+mcp-server-config.json
+
 # Keep these files:
 # - src/ (source code)
 # - examples/ (usage examples)
@@ -132,3 +135,4 @@ __tests__/
 # - package.json
 # - tsconfig.json
 # - .env.example (template only)
+# - mcp-server-config.example.json (template only)

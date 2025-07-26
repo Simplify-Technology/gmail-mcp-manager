@@ -29,7 +29,7 @@ async function initializeGmailManager() {
 // Create MCP Server
 const server = new McpServer({
   name: "gmail-mcp-server",
-  version: "1.0.0"
+  version: "1.3.3"
 });
 
 /**

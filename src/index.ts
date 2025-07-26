@@ -328,7 +328,7 @@ export default GmailMCPManager;
 /**
  * ✅ **Version information**
  */
-export const VERSION = '1.0.0';
+export const VERSION = '1.3.3';
 export const AUTHOR = 'MCP Gmail Manager';
 export const LICENSE = 'MIT';
 

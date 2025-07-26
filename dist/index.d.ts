@@ -117,7 +117,7 @@ export default GmailMCPManager;
 /**
  * ✅ **Version information**
  */
-export declare const VERSION = "1.0.0";
+export declare const VERSION = "1.3.3";
 export declare const AUTHOR = "MCP Gmail Manager";
 export declare const LICENSE = "MIT";
 /**
