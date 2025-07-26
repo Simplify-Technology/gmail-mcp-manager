@@ -10,6 +10,12 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { z } from 'zod';
 import { createFromEnvironment } from './index.js';
 import type { BatchOperation, EmailComposition, EmailListOptions } from './types.js';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(readFileSync(resolve(__dirname, '../package.json'), 'utf-8'));
 
 // Initialize Gmail manager
 let gmailManager: any = null;
@@ -25,7 +31,7 @@ async function initializeGmailManager() {
 // Create MCP Server
 const server = new McpServer({
   name: 'gmail-mcp-manager',
-  version: '1.3.3',
+  version: pkg.version,
 });
 
 /**
