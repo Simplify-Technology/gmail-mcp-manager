@@ -9,8 +9,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "gmail-mcp": "dist/cli.js",
-    "gmail-mcp-server": "dist/mcp-server.js"
+    "gmail-mcp-server": "dist/mcp-server.js",
+    "gmail-mcp": "dist/cli.js"
   },
   "exports": {
     ".": {
